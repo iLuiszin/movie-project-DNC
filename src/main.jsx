@@ -6,11 +6,18 @@ import {
 } from "react-router-dom";
 import './index.scss'
 import App from './App';
+import Home from './pages/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />
+      }
+    ]
   },
 ]);
 
