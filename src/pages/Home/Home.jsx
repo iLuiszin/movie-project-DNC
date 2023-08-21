@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { MovieService } from '../../api/MovieService'
+import MovieCard from '../../components/MovieCard/MovieCard';
 
 const Home = () => {
     const [movies, setMovies] = useState([])
@@ -21,17 +22,13 @@ const Home = () => {
 
     return (
         <section className="Home">
-            <div className="Home__movie-list">
-                {
-                    movies.map(movie => (
-                        <div key={movie.id} className="Home__card-movie">
-                            <h1>{movie.title}</h1>
-                            <h2>{movie.popularity}</h2>
-                            <img src={movie.backdrop_path} alt="" />
-                        </div>
-                    ))
-                }
-            </div>
+            {
+                movies.map(movie => (
+                    <div key={movie.id}>
+                        <MovieCard key={movie.id} movie={movie} />
+                    </div>
+                ))
+            }
         </section>
     )
 }
