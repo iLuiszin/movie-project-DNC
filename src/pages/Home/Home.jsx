@@ -5,19 +5,33 @@ const Home = () => {
     const [movies, setMovies] = useState([])
 
     async function getMovies() {
-        const { data } = await MovieService.getMovies();
-        console.log(data)
+        const { data: { results } } = await MovieService.getMovies();
+        setMovies(results)
     }
 
     useEffect(() => {
-        getMovies()
-    })
+        getMovies();
+    }, [])
+
+    useEffect(() => {
+        console.log(movies)
+    },)
 
 
 
     return (
         <section className="Home">
-            <h1>oi</h1>
+            <div className="Home__movie-list">
+                {
+                    movies.map(movie => (
+                        <div key={movie.id} className="Home__card-movie">
+                            <h1>{movie.title}</h1>
+                            <h2>{movie.popularity}</h2>
+                            <img src={movie.backdrop_path} alt="" />
+                        </div>
+                    ))
+                }
+            </div>
         </section>
     )
 }
