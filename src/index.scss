@@ -1,0 +1,14 @@
+@import "./pages/Home/index.scss";
+@import "./pages/MovieDetail/index.scss";
+@import "./components/Header/index.scss";
+@import "./components/MovieCard/index.scss";
+
+// import roboto font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}

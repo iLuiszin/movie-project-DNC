@@ -1,23 +1,43 @@
 import { useEffect, useState } from 'react'
 import { MovieService } from '../../api/MovieService'
+import MovieCard from '../../components/MovieCard/MovieCard';
 
-const Home = () => {
+const Home = ({ searchValue }) => {
     const [movies, setMovies] = useState([])
 
     async function getMovies() {
-        const { data } = await MovieService.getMovies();
-        console.log(data)
+        const { data: { results } } = await MovieService.getMovies();
+        setMovies(results)
+    }
+
+    async function getMoviesSearch(movieName) {
+        const { data: { results } } = await MovieService.searchMovies(movieName);
+        setMovies(results)
     }
 
     useEffect(() => {
-        getMovies()
-    })
+        getMovies();
+    }, [])
 
+    useEffect(() => {
+        if (searchValue) {
+            getMoviesSearch(searchValue)
+        }
 
+        if (searchValue === '') {
+            getMovies()
+        }
+    }, [searchValue])
 
     return (
         <section className="Home">
-            <h1>oi</h1>
+            {
+                movies.map(movie => (
+                    <div key={movie.id}>
+                        <MovieCard key={movie.id} movie={movie} />
+                    </div>
+                ))
+            }
         </section>
     )
 }
