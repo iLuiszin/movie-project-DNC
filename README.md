@@ -32,6 +32,8 @@ You can also access the live version of the project at: [https://movie-project-d
 
 - **Movies Catalog**: Users can browse a catalog of movies and view details.
 
+- **Search Movies**: Users can search for any movie they want to find.
+
 - **Routes**: The user can navigate through the pages through the routes created in react.
 
 
@@ -84,6 +86,8 @@ Você também pode acessar a versão ao vivo do projeto em: [https://movie-proje
 ## 🔨 Funcionalidades do Projeto
 
 - **Catálogo de Produtos**: Os usuários podem navegar por um catálogo de filmes disponíveis e visualizar detalhes.
+
+- **Pesquisa de Filmes**: Os usuários podem pesquisar por qualquer filme em que tiverem interesse.
 
 - **Rotas**: O usuário pode navegar através das páginas atraves das rotas criadas no react.
 
