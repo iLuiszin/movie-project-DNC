@@ -25,6 +25,8 @@
 
 The project is hosted on GitHub: [Movie Project GitHub Repository](https://github.com/iLuiszin/movie-project-DNC)
 
+You can also access the live version of the project at: [https://movie-project-dnc.vercel.app](https://movie-project-dnc.vercel.app)
+
 ## 🔨 Project Features
 
 - **Movies Catalog**: Users can browse a catalog of movies and view details.
@@ -73,6 +75,8 @@ Feel free to reach out if you have any questions or suggestions!
 ## 📁 Acesso ao Projeto
 
 O projeto está hospedado no GitHub: [Repositório Movie Project no GitHub](https://github.com/iLuiszin/movie-project-DNC)
+
+Você também pode acessar a versão ao vivo do projeto em: [https://movie-project-dnc.vercel.app](https://movie-project-dnc.vercel.app)
 
 ## 🔨 Funcionalidades do Projeto
 
