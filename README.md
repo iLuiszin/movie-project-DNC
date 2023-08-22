@@ -19,6 +19,7 @@
 
 <div style="text-align: justify"> 
   This project was based on the figma available in module 7 of the Training in Technology at the DNC School, React and SASS were used to create this web-site.
+  To display all the movies and their details available, the consumption of The Movie DB API was performed.
 </div>
 
 ## 📁 Access the Project
@@ -56,6 +57,7 @@ For more information on JavaScript, and React, you can refer to the official doc
 
 - [JavaScript MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [The Movie DB Documentation](https://developer.themoviedb.org/reference/intro/getting-started)
 
 Feel free to reach out if you have any questions or suggestions!
 
@@ -70,6 +72,7 @@ Feel free to reach out if you have any questions or suggestions!
 
 <div style="text-align: justify"> 
   Esse projeto foi feito com base no figma disponibilizado no módulo 7 da Formação em Tecnologia da Escola DNC, foi utilizado React e SASS para a criação desse web-site.
+  Para disponibilizar todos os filmes e seus detalhes, foi realizado o consumo da API The Movie DB.
  </div>
 
 ## 📁 Acesso ao Projeto
@@ -103,9 +106,10 @@ Para executar o projeto localmente, siga estas etapas:
 
 ## Recursos de Aprendizado
 
-Para mais informações sobre JavaScript e React, você pode consultar a documentação oficial:
+Para mais informações sobre JavaScript, React e sobre a API The Movie DB, você pode consultar a documentação oficial:
 
 - [Documentação JavaScript MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Documentação do React](https://reactjs.org/docs/getting-started.html)
+- [Documentação da Api The Movie DB](https://developer.themoviedb.org/reference/intro/getting-started)
 
 Sinta-se à vontade para entrar em contato se tiver alguma dúvida ou sugestão!
